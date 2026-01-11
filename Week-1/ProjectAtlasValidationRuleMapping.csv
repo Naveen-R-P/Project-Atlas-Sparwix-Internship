@@ -1,0 +1,10 @@
+Field_name,Rule_category,Rule_description,Severity,Nullable,Remarks
+user_id,Schema,Must be present and a valid UUID,Error,No,Primary user identifier
+action,Business,Must belong to predefined allowed action list,Error,No,Prevents invalid event types
+page,Business,Must be a non-empty string and start with '/',Warning,No,Ensures valid route format
+duration_ms,Business,Must be an integer greater than or equal to 0,Warning,Yes,Nullable duration field
+device_type,Schema,Must be a non-empty string,Error,No,Device classification required
+timestamp,Type,Must be a valid ISO 8601 datetime,Error,No,Used for event sequencing
+referrer,Schema,If present must be a valid string,Info,Yes,Optional traffic source
+session_id,Schema,Must be present and non-empty,Error,No,Used for session grouping
+ip_address,Compliance,Nullable and must be masked or excluded from logs,Info,Yes,PII field under GDPR/CCPA
