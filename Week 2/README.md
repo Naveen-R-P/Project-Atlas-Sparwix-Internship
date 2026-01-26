@@ -14,7 +14,6 @@ data within the Analytics Engine.
 - Performance Benchmark Report
 
 ## Notes
-- Prototype scope only
 - Python + Apache Spark
 - No external APIs used
 - Designed for shared cluster execution
